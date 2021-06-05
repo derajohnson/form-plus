@@ -72,22 +72,7 @@ const Template = props => {
   const searchValue = props.searchValue;
   console.log (searchValue);
 
-  state.allTemplates.filter (val => {
-    var searched;
-    for (var i = 0; i < val.category.length; i++) {
-      searched = val.category[i];
-    }
-    if (searchValue === '') {
-      return val;
-    } else if (searched.toLowerCase ().includes (searchValue.toLowerCase ())) {
-      console.log (val);
-      setSearchInput ([...searchInput, val]);
-     dispatch ({type: 'SEARCH_INPUT', payload: searchInput});
-      // return val
-    }
-  });
-console.log(state.allTemplates)
-  console.log (searchInput);
+  
   return (
     <div className="template-container">
       <div className="template-header">
