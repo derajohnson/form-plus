@@ -36,7 +36,6 @@ const reducer = (state, action) => {
 
 const Template = props => {
   const [currentPage, setCurrentPage] = useState (1);
-  const [searchInput, setSearchInput] = useState ([]);
   const [postsPerPage] = useState (30);
   const [state, dispatch] = useReducer (reducer, initialState);
   const paginate = pageNumber => setCurrentPage (pageNumber);
@@ -70,7 +69,6 @@ const Template = props => {
     setCurrentPage (current);
   };
   const searchValue = props.searchValue;
-  console.log (searchValue);
 
   
   return (
