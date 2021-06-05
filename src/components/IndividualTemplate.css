@@ -1,0 +1,37 @@
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 30px;
+}
+
+.name {
+    font-size: 24px;
+    color: #333447;
+}
+
+.description {
+    font-size: 14px;
+color: #3F3E3E;
+}
+
+.link {
+    text-decoration: none;
+    color: #08BD37;
+      position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background: #F9F9F9;
+    width: 94.5%;
+}
+
+.grid-item {
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+border-radius: 2px;
+padding: 0 10px;
+min-height: 230px;
+position: relative;
+
+}

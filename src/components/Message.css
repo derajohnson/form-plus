@@ -1,0 +1,25 @@
+.message-container {
+    padding: 0 60px;
+}
+
+
+.message {
+    text-align: center;
+    margin-top: 90px;
+    color: #252525;
+    font-size: 14px;
+    background: #FFF4EA;
+border-radius: 2px;
+padding: 10px 10px;
+}
+
+.fa-info-circle {
+    margin-right: 20px;
+    color: #FC830A;
+}
+
+@media screen and (max-width: 400px) {
+    .message-container {
+        padding: 0 20px;
+    }
+}
